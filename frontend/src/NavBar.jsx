@@ -2,7 +2,7 @@ const NavBar = () => {
     return (
         <div className="h-16 flex justify-around items-center border-1 border-gray-200 ">
             <div>
-                <p className="text-xl font-bold">BlogVerse</p>
+                <p className="text-sm md:text-xl font-bold">BlogVerse</p>
             </div>
             <div>
                 <button className="text-gray-700 px-5 py-2 rounded-lg hover:bg-gray-200 hover:text-gray-800">Home</button>

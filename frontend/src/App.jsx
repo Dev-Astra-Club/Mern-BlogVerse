@@ -1,11 +1,17 @@
 import SignUp from "./SignUp.jsx"
 import NavBar from "./NavBar.jsx"
+import ProductCard from "./ProductCard.jsx"
+import Login from "./Login.jsx"
+import Home from "./Home.jsx"
 
 const App = () => {
   return (
-    <div>
+    <div className="">
       <NavBar/>
-      <SignUp />
+      {/* <Login/> */}
+      <Home/>
+      {/* <SignUp /> */}
+     {/* <ProductCard/> */}
     </div>
   )
 }
