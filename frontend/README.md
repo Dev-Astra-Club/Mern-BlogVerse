@@ -122,3 +122,6 @@ shadow- (Box Shadow):
 
 shadow-sm, shadow-md, shadow-lg, shadow-xl, shadow-2xl.
 
+
+BrowserRouter  Routes Route Link    (to="")
+

@@ -1,6 +1,8 @@
 // 
 // numbers=[1,2,3,4,5]
 
+import NavBar from "./NavBar";
+
 // numbers.map((num)=>(html))
 
 function Home() {
@@ -62,8 +64,9 @@ function Home() {
     }]
 
     return (
-        <div className="min-h-screen flex flex-col items-center pt-5 bg-gray-50">
-            <p className="text-4xl font-bold">Welcome back, Dev Astra</p>
+        <div className="min-h-screen flex flex-col items-center bg-gray-50">
+            <NavBar/>
+            <p className="text-4xl pt-5 font-bold">Welcome back, Dev Astra</p>
             <p className="text-lg text-gray-500 mt-4"> Discover amazing stories, insights, and ideas from our community of writers.</p>
             <div className=" flex gap-10 justify-around mt-5 ">
                 <button className="px-10 py-4 cursor-pointer bg-blue-700 hover:bg-blue-900 shadow-md text-white rounded-md">Write a New Post</button>
@@ -73,7 +76,7 @@ function Home() {
                 {
                     posts.map((post) => (
                         <div className="w-96 bg-white shadow-lg rounded-lg" key={post.id}>
-                            <div className="relative">
+                            <div className="flex relative">
                                 <img className=" rounded-t-lg  shadow-lg h-52 w-96 " src={post.Image} alt="Writing" />
                                 <button className="p-3 text-sm bg-white rounded-full absolute cursor-pointer right-4 top-3">Save</button>
                             </div>
